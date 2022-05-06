@@ -14,9 +14,9 @@ body {
     text-decoration: none;
     max-width: 450px;
     text-align: center;
-    box-shadow: 1px 2px 15px #660A0C;
+    box-shadow: 1px 2px 50px #56C9F5;
     padding-bottom: 85px;
-    background-image: url('https://i.ibb.co/Qk6BGHd/RTGBG.jpg');
+    background-image: url('#');
     background-attachment: fixed;
 }
 
@@ -49,7 +49,7 @@ strong, b, h1, h2, h3, h4, h5 {
 	max-height: 95%;
 }
 .views {
-    padding: 5px 7px;
+    padding: 10px 7px;
     border: 1px solid var(--theme-color);
     border-radius: 5px;
     margin: 17px 0;     font-size: 12px;
@@ -103,7 +103,7 @@ strong, b, h1, h2, h3, h4, h5 {
     font-size: 18px; line-height:40px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 251, 251, 0.1) inset;
     text-align: center;
-    color: #fff;
+    color: #f7f7f7;
     border: none;
     margin: 5px 10px;
     border: 1px solid var(--theme-color);
@@ -176,10 +176,10 @@ strong, b, h1, h2, h3, h4, h5 {
     display: inline-block;
     font-size: 12px;
     box-shadow: 1px 1px 5px rgba(107, 128, 168, 0.2);
-    /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 251, 251, 0.1) inset;*/
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 251, 251, 0.1) inset;*/
     text-align: center;
     background-color: var(--theme-color);
-    color: #fff;
+    color: rgb(14, 17, 67);
     /*border: 2px solid #424242;*/
     margin-right: 5px;
     margin-bottom: 10px;
@@ -216,12 +216,12 @@ strong, b, h1, h2, h3, h4, h5 {
 
 .share-whatsapp input {
    -webkit-appearance: none;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #fcea24;
     padding: 10px;
     outline: none;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #fff; 
+    border: 1px solid #36A246; 
 	border-radius: 5px 0 0 5px; width:100%;
 	padding-left: 40px;
 	
@@ -233,7 +233,7 @@ strong, b, h1, h2, h3, h4, h5 {
     padding: 10px;
     font-size: 13px;
     background-color: var(--theme-color);
-    color: #fff;
+    color: #fcea24;
     border: none;
     display: flex;
     align-items: center;
@@ -243,7 +243,7 @@ strong, b, h1, h2, h3, h4, h5 {
 
 .whatsapp-btn i {
     font-size: 16px;
-    margin-right: 10px; color: #fff;
+    margin-right: 10px; color: #fcea24;
 }
 
 .input-wrapper {
@@ -321,7 +321,7 @@ a.share{min-width:80px;}
 /* Card  Starts */
 .card {
     text-align: left;
-    background-color: #d8d8d870;
+    background-color: #fcea24;
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
@@ -392,7 +392,7 @@ a.share{min-width:80px;}
     font-size: 18px;
     padding: 12px;
     border-left: 2px solid var(--theme-color);
-    color: #ffffff;
+    color: #fcea24;
     background: var(--theme-color);
 }
 
@@ -460,7 +460,7 @@ a.share{min-width:80px;}
     height: auto;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s; border:1px solid #f5f5f5;
+    transition: 0.3s; border:1px solid #fcea24;
 }
 
 .images-container .image-wrapper img:hover {
@@ -636,7 +636,7 @@ a.share{min-width:80px;}
 .footer-menu .footer-menu-icon {
     font-size: 20px;
     margin-bottom: 0px;
-    color: #fff;
+    color: #fcea24;
 }
 
 .footer-menu .footer-menu-text {
