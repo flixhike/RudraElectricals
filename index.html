@@ -1,16 +1,16 @@
 <!doctype html>
 
 <html>
-
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <head>
-
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
 <title>Rudra Electricals Virtual Business Card</title>
 
 <meta name="description" content="Rudra Electricals
@@ -24,7 +24,7 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
 <link rel="shortcut icon" href="img/icon.ico" />
 
-<link href="css/main.css" rel="stylesheet">
+
 
 <!--<link href="demo-templates/common/css/star-rating.css" rel="stylesheet">-->
 
@@ -34,35 +34,49 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
 <meta property="og:description" content="Rudra Electricals" />
 
+
 <script src="https://kit.fontawesome.com/c180f46001.js" crossorigin="anonymous"></script>
 
-<script>
+    <script>
 
             document.documentElement.style.setProperty('--theme-color', '#56CAF4');
 
             document.documentElement.style.setProperty('--theme-color-light', '#382671');
 
-        </script>
-</head>
+    </script>
+ </head>
 
-<body>
+ <body>
 
-<div class="main-wrapper" id="home">
+ <div class="main-wrapper" id="home">
 
   <!--div class="companylogo"><img src="" class="img-responsive" alt="Flix Hike Studios"></div-->
+  <div class="views"><i class="fa fa-eye"></i> Views: <b id=count>0</b></div>
+  
+  <script>
+ const countEl = document.getElementById('count');
 
-  <div class="views"><i class="fa fa-eye"></i> Views: <b>NA</b></div>
+updateVisitCount();
 
-  <div class="clearfix"></div>
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/rtgjdigitals/myweb/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
+ </script>
 
-  <div class="headerbg">
+  
+
+        <div class="clearfix"></div>
+
+    <div class="headerbg">
 
     <div class="personface"><img src="img/mainlogo.jpg" class="img-responsive" alt=""  /></div>
+   </div>
 
-    
-    </div>
-
-    <div class="clearfix"></div>
+   <div class="clearfix"></div>
 
     <div class="contact-row"> <a class="contact-icon" href="tel:919000153282"> <i class="fa fa-phone"></i> 
 
@@ -80,11 +94,12 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
       <!-- Mail --> 
 
-      </a> </div>
+      </a> 
+    </div>
 
   </div>
 
-  <div class="firstpagebottom">
+ <div class="firstpagebottom">
 
    <!-- <ul class="firstpage share-btn">
 
@@ -101,7 +116,7 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
     <div class="share-whatsapp">
 
       <div class="input-wrapper">
-<label>+91</label>
+        <label>+91</label>
         <input id="whatsapp-input" class="input" placeholder="Enter mobile number" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
 
       </div>
@@ -150,79 +165,24 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
     <div class="p-20"></div>
 
-  </div>
+  </div> <!-- need a check-->
 
-</div>
+  </div> <!-- need a check-->
 
-<div class="page-container" id="aboutus">
-
-  <h2 class="section-heading">ABOUT US</h2>
-
-  <table class="about-tbl">
-
-    <tbody>
-
-      <tr>
-
-        <td class="td-label"><h3>Company Name</h3></td>
-
-        <td>:</td>
-
-        <td> Rudra Electricals </td>
-
-      </tr>
-
-      <tr>
-
-        <td class="td-label"><h3>Year of Est.</h3></td>
-
-        <td>:</td>
-
-        <td> 1972 </td>
-
-      </tr>
-
-      <tr>
-
-        <td class="td-label"><h3>About Rudra Electricals</h3></td>
-
-        <td>:</td>
-
-        <td> CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCESSORIES | SAFETY </td>
-
-      </tr>
-
-    </tbody>
-
-  </table>
-
-  <p class="about-txt">Rudra Electricals Is Engaged In The Business Of Selling All Type Of  Industrial And Domestic Electrical Goods Like Wires And Cables And Pipes, Switchgear, Motors, Lighting, Panel Accessories, Circuit Protection Devices, Fans, Modular Switches, Power Capacitors, Industrial Plug & Socket,  Luminaires for Domestic, Commercial and Industrial Applications, Cable Trays, & Earthing Products-Like Gi Flats, Copper Flats, Salt, Charcoal And Many More Fast Moving Electrical & SAFETY Goods</p>
-
-  <p>We Have Huge Range In Our Product Portfolio, We Are Stockist For Reputed National & International Brands Like POLYCAB| |FINOLEX| |HAVELLS| |LEGRAND| |SIMENS| |SCHNEIDER| |TC| |L&T| |HPL| |ABB| |ANCHOR| |WIPRO| |PHILIPS| |PANASONIC| |CROMPTON GREAVES| |BAJAJ| |KIRLOSKAR| |SUDHAKAR PEPES & FITTINGS| |MECO |WACO| |FLUKE| |SELECTRON| |MW| |OMRON| |HENSEL| |ALMONARD| |DOWELLS| |HMI| </p>
-
-  <p>We Firmly Believe In Moving Ahead With Time & Technology Our Experience And Our Prominence Not Just On Creating But Maintaining Relationships With You always.  kindly share your requirements and see our lowest offer </p>
-
-  <p><strong>LOOKING FORWARD FOR FAVOURABLE AND POSITIVE REPLY </strong><br>
-  </p>
-   <h3>Our other services :</h3>
-
-  <ul class="unorderedList">
-    <p><strong>Dealer In:</strong></p>
-
-    <li>MCB, MCCB's, RCCB's, Db Boards</li>
-    <li>SFU, Changeover's ACB</li>
-    <li>Industrial Lighting & Led</li>
-    <li>Ceiling Fans, Table Fans & Exhaust Fans</li>
-    <li>Modular Plate Switches & Accessories</li>
-    <li>Aluminum & Copper Armoured & Flexible Cables</li>
-    <li>All Cables Wires & Panel Accessories</li>
-    <li> All Kinds Of Cable Accessories Like Lugs, Glands, Cable-Ties & Many More</li>
-    <li>All Industrial Electrical Instruments & Accessories</li>
-    <li>All Kinds Of Motors Flp And Non Flp</li>
-    <p> We are well known in Dealing With GI & Copper flats along with Charcoal And Salt as well as All kinds of  Cable-Trays.</P>
-    
-  </ul>
+  <div class="page-container" id="aboutus">
+        <div class="card">     
+        
+        <img onClick="openImageModal(this)" src="./img/p1.jpg" href="img/logo.jpg" alt="aboutus" border="0" style="width:100%; height:100%;">
+        
   
+        <div class="product-enquiry-section">
+  
+          <div class="product-price"> Price: As Per Requirement </div>
+  
+         <br> <a href="https://wa.me/919000153282?text=Hi,%20I%20am%20interested%20in%20your%20product/service:%20.%20Please%20provide%20more%20details." target="blank" class="product-enquiry-btn">Enquiry</a> </div>
+        </br>
+      </div>
+      
   <div class="other-links-wrapper">
 
         <h3 class="other-links-header">Other Links :</h3>
@@ -244,113 +204,119 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
   <div class="download-icon"><i class="fa fa-download"></i></div>
 
   </a> 
+
+ 
+ </div>
+ <div class="container">
+  <h2 class="text-center font-weight-bold">Our Partners</h2>
+  <section class="customer-logos slider">
+      <div class="slide"><img src="img/Partners/IMG (1).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (2).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (3).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (4).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (5).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (6).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (7).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (8).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (9).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (10).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (11).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (12).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (13).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (14).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (15).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (16).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (17).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (18).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (19).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (20).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (21).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (22).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (23).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (24).png" alt="logo"></div>
+      <div class="slide"><img src="img/Partners/IMG (25).png" alt="logo"></div>
+
+  </section>
 </div>
-<!--slider start-->
-<div class="page-container" id="photogallery">
+<script>
 
-    <h2 class="section-heading">BRANDS WE DEAL IN</h2>
-    <P>A HOUSE OF COMPLETE INDUSTRIALS & DOMESTIC ELECTRICAL GOODS</P>
-  
-    <div class="img-slider">
-        <div class="slide active">
-          <img src="#" alt="IMG1" style="" >
-          <div class="info">
-            <h2></h2>
-           </div>
-        </div>
-        <div class="slide">
-          <img src="#" alt="IMG2">
-          <div class="info">
-            <h2></h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="#" alt="">
-          <div class="info">
-            <h2>Slide 03</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="4.jpg" alt="">
-          <div class="info">
-            <h2>Slide 04</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="5.jpg" alt="">
-          <div class="info">
-            <h2>Slide 05</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="navigation">
-          <div class="btn active"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-        </div>
-      </div>
-  
-      <script type="text/javascript">
-      var slides = document.querySelectorAll('.slide');
-      var btns = document.querySelectorAll('.btn');
-      let currentSlide = 1;
-  
-      // Javascript for image slider manual navigation
-      var manualNav = function(manual){
-        slides.forEach((slide) => {
-          slide.classList.remove('active');
-  
-          btns.forEach((btn) => {
-            btn.classList.remove('active');
-          });
-        });
-  
-        slides[manual].classList.add('active');
-        btns[manual].classList.add('active');
-      }
-  
-      btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-          manualNav(i);
-          currentSlide = i;
-        });
-      });
-  
-      // Javascript for image slider autoplay navigation
-      var repeat = function(activeClass){
-        let active = document.getElementsByClassName('active');
-        let i = 1;
-  
-        var repeater = () => {
-          setTimeout(function(){
-            [...active].forEach((activeSlide) => {
-              activeSlide.classList.remove('active');
-            });
-  
-          slides[i].classList.add('active');
-          btns[i].classList.add('active');
-          i++;
-  
-          if(slides.length == i){
-            i = 0;
+$(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover:false,
+      responsive: [{
+          breakpoint: 768,
+          setting: {
+              slidesToShow:2
           }
-          if(i >= slides.length){
-            return;
+      }, {
+          breakpoint: 520,
+          setting: {
+              slidesToShow: 1
           }
-          repeater();
-        }, 10000);
-        }
-        repeater();
-      }
-      repeat();
-      </script>
+      }]
+  });
+});
 
-      <!--Slider Ends-->
+</script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  body{
+      font-family: 'Poppins', sans-serif !important;
+      background: #ffffff;
+  }
+  .container{
+      padding-top: 15px;
+      padding-bottom: 0;
+  }
+  h2{
+      text-align: center;
+      padding: 10px;
+  }
+  .slick-slide{
+      margin: 0px 0px;
+  }
+  .slick-slide img{
+      width: 100%;
+  }
+  .slick-slider{
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+  }
+  .slick-list{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0px;
+  }
+  .slick-track{
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block
+  }
+  .slick-slide{
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+  }
+  .slick-slide img{
+      display: block;
+
+  }
+  .slick-initialized .slick-slide{
+      display: block;
+  }
+  .copy{
+      padding-top: -80px;
+  }</style>
     
       <div class="image-wrapper"> <img onClick="openImageModal(this)" alt="" src="demo-templates/images/gallery1.jpg" style="width:100%"> </div>
   
@@ -359,7 +325,7 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
     </div>
   
 
-<div class="page-container" id="products-services">
+ <div class="page-container" id="products-services">
 
   <h2 class="section-heading">Services</h2>
 
@@ -388,250 +354,125 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
   </div>
 
-</div>
+ </div>
 
-<div class="page-container" id="payment">
+    <div class="page-container" id="payment">
 
   <h2 class="section-heading">Payment</h2>
 
   <div>
 
-    <table class="about-tbl">
+      <table class="about-tbl">
 
       <tbody>
 
-        <tr>
+      <tr>
 
-          <td width="50%" class="td-label"><h3>Paytm Number</h3></td>
+    <td width="50%" class="td-label"><h3>Paytm Number</h3></td>
 
-          <td>: </td>
+    <td>: </td>
 
-          <td> 8143438388 </td>
+    <td> 8341711412 </td>
 
-        </tr>
+      </tr>
 
-        <tr>
+       <tr>
 
-          <td width="50%" class="td-label"><h3>Phone Pe Number</h3></td>
+    <td width="50%" class="td-label"><h3>Phone Pe Number</h3></td>
 
-          <td>: </td>
+    <td>: </td>
 
-          <td> 8143438388 </td>
+    <td> 8341711412 </td>
 
-        </tr>
+      </tr>
 
-        <tr>
+      <tr>
 
-          <td width="50%" class="td-label"><h3>Google Pay Number</h3></td>
+    <td width="50%" class="td-label"><h3>Google Pay Number</h3></td>
 
-          <td>: </td>
+    <td>: </td>
 
-          <td> 8143438388 </td>
+    <td> 8341711412 </td>
 
-        </tr>
-
-      </tbody>
-
-    </table>
-
-    <h3 align="center">Account Details:</h3>
-
-    <table class="about-tbl">
-
-      <tbody>
-
-        <tr>
-
-          <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>Bank Name</h3></td>
-
-          <td bgcolor="#f5f5f5">: </td>
-
-          <td bgcolor="#f5f5f5"> NA </td>
-
-        </tr>
-
-        <tr>
-
-          <td width="50%" class="td-label"><h3>Account Holder Name</h3></td>
-
-          <td>: </td>
-
-          <td> NA </td>
-
-        </tr>
-
-        <tr>
-
-          <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>Account Number</h3></td>
-
-          <td bgcolor="#f5f5f5">: </td>
-
-          <td bgcolor="#f5f5f5"> NA </td>
-
-        </tr>
-
-        <tr>
-
-          <td width="50%" class="td-label"><h3>Account Type</h3></td>
-
-          <td>: </td>
-
-          <td> Savings Or Current </td>
-
-        </tr>
-
-        <tr>
-
-          <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>IFSC code</h3></td>
-
-          <td bgcolor="#f5f5f5">: </td>
-
-          <td bgcolor="#f5f5f5"> IFSC NA </td>
-
-        </tr>
+      </tr>
 
       </tbody>
 
-    </table>
+      </table>
 
-    <h3 align="center">QR codes:</h3>
+      <h3 align="center">Account Details:</h3>
 
-    <div>
+      <table class="about-tbl">
 
-      <h4>Paytm</h4>
-		<a href="https://imgbb.com/"><img src="https://i.ibb.co/02cYjMG/Whats-App-Image-2022-01-14-at-8-30-39-AMv.jpg" alt="" border="0" style="width:150px;height:150px;></a><br />
-     <!-- <img src="https://drive.google.com/uc?export=14uB4wqF8VTh6LPXyeR-G1IZefVcS197Q" class="qr-image"-->  </div>
+       <tbody>
 
-    <div>
+      <tr>
 
-      <h4>PhonePe</h4>
-		<a href="https://imgbb.com/"><img src="https://i.ibb.co/Xz9g7fR/Whats-App-Image-2022-01-14-at-9-09-48-PMv.jpg" alt="" border="0" style="width:150px;height:150px;></a>
-      <!-- <img src="demo-templates/images/googlepayQR.png" class="qr-image"--> </div>
-      
-      <!--      
-      <div>
-      <h4>PhonePe</h4>
-      <img src="demo-templates/images/phonepeQR.png" class="qr-image"> </div>
-      -->
-	<h3 align="center">Paynow:</h3>
-	<div>
-	<tr>
-		<td width="50%" bgcolor="#f5f5f5" class="td-label">
-      <a align="center">Paytm</a>
-      <a href="https://p.paytm.me/xCTH/710e93fe" target="blank" align="center" class="product-enquiry-btn" >Paynow</a> </td> </tr></div>
-</div>
-  </div>
+    <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>Bank Name</h3></td>
 
-</div>
-<!--<section>
-    <div class="container">
-        <div class="section-title">
-            <h2>Testimonials</h2>
-            <span class="section-separator"></span>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
+    <td bgcolor="#f5f5f5">: </td>
+
+    <td bgcolor="#f5f5f5"> NA </td>
+
+      </tr>
+
+      <tr>
+
+    <td width="50%" class="td-label"><h3>Account Holder Name</h3></td>
+
+    <td>: </td>
+
+    <td> NA </td>
+
+      </tr>
+
+      <tr>
+
+    <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>Account Number</h3></td>
+
+    <td bgcolor="#f5f5f5">: </td>
+
+    <td bgcolor="#f5f5f5"> NA </td>
+
+      </tr>
+
+      <tr>
+
+    <td width="50%" class="td-label"><h3>Account Type</h3></td>
+
+    <td>: </td>
+
+    <td> Savings Or Current </td>
+
+      </tr>
+
+      <tr>
+
+    <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>IFSC code</h3></td>
+
+    <td bgcolor="#f5f5f5">: </td>
+
+    <td bgcolor="#f5f5f5"> IFSC NA </td>
+
+   </tr>
+
+   </tbody>
+
+   </table>
+
+      <h3 align="center">ALL In One QR code</h3>
+
+      <div align="center">
+  <img src="https://i.ibb.co/mJJV0mp/Whats-App-Image-2022-01-17-at-9-28-40-PM.jpg" alt="Whats-App-Image-2022-01-17-at-9-28-40-PM" border="0"style="width:200px;height:350px;> 
+      </div>
+
+    
+             <div align="Center">
+            <br><br><a align="center">Click Here:</a>
+          <a href="upi://pay?pn=Ratnaraj Digitals&amp;pa=8341711412@okbizaxis" target="blank" align="center" class="product-enquiry-btn" >Paynow</a> </td> </tr></div></br></br></div>
+     </div>
     </div>
-    <div class="testimonials-carousel-wrap">
-        <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
-        <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
-        <div class="testimonials-carousel">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="img/21.jpg"></div>
-                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                            <div class="testimonials-text">
-                                <div class="listing-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="#" class="text-link"></a>
-                                <div class="testimonials-avatar">
-                                    <h3>John Doe</h3>
-                                    <h4>Owner</h4>
-                                </div>
-                            </div>
-                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
-                        </div>
-                    </div>
-
-                    <!--second
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="img/3.jpg"></div>
-                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                            <div class="testimonials-text">
-                                <div class="listing-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="#" class="text-link"></a>
-                                <div class="testimonials-avatar">
-                                    <h3>Doe Boe</h3>
-                                    <h4>Director</h4>
-                                </div>
-                            </div>
-                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
-                        </div>
-                    </div>
-                    <!--third
-
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="img/4.jpg"></div>
-                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                            <div class="testimonials-text">
-                                <div class="listing-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="#" class="text-link"></a>
-                                <div class="testimonials-avatar">
-                                    <h3>Boe Doe</h3>
-                                    <h4>Developer</h4>
-                                </div>
-                            </div>
-                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
-                        </div>
-                    </div>
-
-                    <!--fourth
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="img/6.jpg"></div>
-                            <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                            <div class="testimonials-text">
-                                <div class="listing-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="#" class="text-link"></a>
-                                <div class="testimonials-avatar">
-                                    <h3>Doe John</h3>
-                                    <h4>Designer</h4>
-                                </div>
-                            </div>
-                            <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
-                        </div>
-                    </div>
-                    testi end-->
+</div>
 
                 </div>
             </div>
@@ -639,68 +480,6 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
         <div class="tc-pagination"></div>
     </div>
-</section>
-
-<!--feedbacks
-<div class="page-container" id="feedback">
-
-  <h2 class="section-heading">Feedbacks</h2>
-
-  <div class="feedback-list">
-
-    <div class="feedback-wrapper"> <span class="feedback-name-wrapper"><span class="feedback-name">manaswi pynampuram</span> a month ago </span>
-
-      <div><span class="gl-star-rating-stars s50"><span data-value="1" data-text="Terrible"></span><span data-value="2" data-text="Poor"></span><span data-value="3" data-text="Average"></span><span data-value="4" data-text="Very Good"></span><span data-value="5" data-text="Excellent"></span></span></div>
-
-      <div>Good work and reasonable Price....good response and good explanation by ganesh garu...
-    These prints are life time memory who Has to casting impression of their babies...
-    Great work and best quality in nellore</div>
-
-      <hr>
-
-    </div>
-
-    <div class="feedback-wrapper"> <span class="feedback-name-wrapper"><span class="feedback-name">Madhuri Yamarthy</span> a month ago </span>
-
-      <div><span class="gl-star-rating-stars s50"><span data-value="1" data-text="Terrible"></span><span data-value="2" data-text="Poor"></span><span data-value="3" data-text="Average"></span><span data-value="4" data-text="Very Good"></span><span data-value="5" data-text="Excellent"></span></span></div>
-
-      <div>Great job 👍 beautiful baby impressions  it's so nice, memories remain in life.</div>
-
-      <hr>
-
-    </div>
-
-  </div>
-
-  <form class="feedback-form card" novalidate>
-
-    <div class="feedback-form-heading">Give Feedback</div>
-
-    <select class="star-rating" id="rating" name="rating">
-
-      <option value="">Select a rating</option>
-
-      <option value="5">Excellent</option>
-
-      <option value="4">Very Good</option>
-
-      <option value="3">Average</option>
-
-      <option value="2">Poor</option>
-
-      <option value="1">Terrible</option>
-
-    </select>
-
-    <input type="text" name="feedbackName" id="feedbackName" placeholder="Enter Full Name"/>
-
-    <textarea name="feedback" id="feedback" placeholder="Enter your feedback"></textarea>
-
-    <input type="submit" value="Give Feedback" onClick="sendFeedback(this, 'prashant-dave')"/>
-
-  </form>
-
-</div>-->
 
 <div class="page-container" id="enquiry">
 
@@ -747,19 +526,6 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
   <div class="copyright-inner" style="color:red;"> All Copyright are submit to     <a href="http" target="_blank">rudraelectricals © 2019</a> </div>
 
 </div>
-
-
-
-
-
-<!-- The image Modal Popup-->
-
-<div id="imageModal" class="modal"> <span class="close" id="imageModalClose">&times;</span> <img class="modal-content fadeIn" id="img01" alt="">
-
-  <div id="caption"></div>
-
-</div>
-
 <!-- The share Modal Popup -->
 
 <div id="shareModal" class="modal share-modal">
@@ -857,10 +623,9 @@ CABLES | WIRES | PIPES | SWITCHGEARS | LIGHTING | EARTHING PRODUCTS | PANAL ACCE
 
 </div>
 
+
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="demo-templates/common/js/star-rating.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-  <script src="scripts.js"></script>
+
 
 </body>
 
