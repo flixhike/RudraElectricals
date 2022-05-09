@@ -327,11 +327,7 @@ $(document).ready(function(){
       padding-top: -80px;
   }</style>
     
-      <div class="image-wrapper"> <img onClick="openImageModal(this)" alt="" src="demo-templates/images/gallery1.jpg" style="width:100%"> </div>
-  
-      <div class="image-wrapper"> <img onClick="openImageModal(this)" alt="" src="demo-templates/images/gallery2.jpg" style="width:100%"> </div>
-      
-    </div>
+      </div>
   
 
  <div class="page-container" id="products-services">
@@ -469,16 +465,16 @@ $(document).ready(function(){
 
    </table>
 
-      <h3 align="center">ALL In One QR code</h3>
+     <br> <h3 align="center">ALL In One QR code</h3> </br>
 
       <div align="center">
-  <img src="#" alt="Whats-App-Image-2022-01-17-at-9-28-40-PM" border="0"style="width:200px;height:350px;> 
+  <img src="./img/QR.png" alt="Whats-App-Image-2022-01-17-at-9-28-40-PM" border="0"style="width: 200px;;height:250px;> 
       </div>
 
     
              <div align="Center">
             <br><br><a align="center">Click Here:</a>
-          <a href="upi://pay?pn=Ratnaraj Digitals&amp;pa=9000153282@okbizaxis" target="blank" align="center" class="product-enquiry-btn" >Paynow</a> </td> </tr></div></br></br></div>
+          <a href="upi://pay?pn=RUDRA ELECTRICALS&amp;pa=rehyd2015@okaxis" target="blank" align="center" class="product-enquiry-btn" >Paynow</a> </td> </tr></div></br></br></div>
      </div>
     </div>
 </div>
@@ -491,12 +487,16 @@ $(document).ready(function(){
     </div>
 
 <div class="page-container" id="enquiry">
-
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
+  window.location='index.html';}"></iframe>
   <h2 class="section-heading">ENQUIRY FORM</h2>
 
-  <form class="enquiry-form" novalidate>
+  
+    <form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFVdO5NWPDxp27zf64E_7Zz7FZvoHSfrUKcCYlISvuvxEbQQ/formResponse" class="enquiry-form" method="post" target="hidden_iframe" onsubmit="submitted=true">
+             
 
-    <input type="text" name="enquiryName" id="enquiryName" placeholder="Enter Full Name"/>
+    <input type="text"  id="name" placeholder="Enter Full Name" required name="entry.1133902179"/>
 
     <br/>
 
@@ -504,7 +504,7 @@ $(document).ready(function(){
 
       <div class="enquiry-phoneNumber">
 
-        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number"/>
+        <input type="text"  id="phone" placeholder="Enter Phone Number" required name="entry.1489836217"/>
 
         <br/>
 
@@ -512,7 +512,7 @@ $(document).ready(function(){
 
       <div class="enquiry-email">
 
-        <input type="text" name="email" id="email" placeholder="Enter Email"/>
+        <input type="text"  id="email" placeholder="Enter Email" required name="entry.1320675462"/>
 
         <br/>
 
@@ -520,15 +520,16 @@ $(document).ready(function(){
 
     </div>
 
-    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+    <textarea id="message" placeholder="Enter Message" required name="entry.1240799633"></textarea>
 
     <br/>
 
-    <input type="submit" value="Send" onClick="sendEnquiry(this, 'flixhikestudios@gmail.com')"/>
+    <input type="submit" value="Send" />
 
   </form>
 
 </div>
+
 
 <div class="copyright">
 
@@ -549,7 +550,7 @@ $(document).ready(function(){
 
     <div class="share-form-buttons-container">
 
-      <div class="share-btn-heading"> <img src="demo-templates/images/tild-arrow.svg" class="share-btn-arrow" alt="">
+      <div class="share-btn-heading"> <img src="#" class="share-btn-arrow" alt="">
 
         <div class="share-btn-heading-text">Share my Virtual Business Card in your network.</div>
 
@@ -627,7 +628,7 @@ $(document).ready(function(){
 </div>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="demo-templates/common/js/star-rating.js"></script> 
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="#"></script> 
 
 
 </body>
